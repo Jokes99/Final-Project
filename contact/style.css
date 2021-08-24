@@ -1,0 +1,617 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: none;
+  font-family: "Roboto", sans-serif;
+  height: 500px;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px 0 100px;
+}
+nav .logo {
+  display: flex;
+  color: #fff;
+  font-size: 35px;
+}
+nav .ul1 {
+  display: flex;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+/*---------------------------------------------------------*/
+nav .first .sign-in {
+  position: absolute;
+  right: 23%;
+  top: 13%;
+  display: flex;
+  padding: 20px;
+}
+
+nav .first .sign-in input {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+nav .first .sign-in input:hover {
+  color: #1b1b11;
+  background: white;
+}
+/*---------------------------------------------------------*/
+
+nav .second .sign-up {
+  position: absolute;
+  right: 15%;
+  top: 13%;
+  display: flex;
+  padding: 20px;
+}
+
+nav .second .sign-up input {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+nav .second .sign-up input:hover {
+  color: #1b1b11;
+  background: white;
+}
+
+/*--------------------------------------------------------------*/
+.min-text {
+  display: none;
+}
+#click:checked ~ .ul1 {
+  left: 0%;
+}
+nav .ul1 li {
+  margin: 0 5px;
+}
+
+nav .ul1 li a {
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+nav .ul1 li a:hover {
+  color: #1b1b11;
+  background: #fff;
+}
+
+nav .menu-btn i {
+  position: absolute;
+  top: 25%;
+  right: 20%;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+  display: none;
+}
+
+#click {
+  display: none;
+}
+
+/*-------------------------------------*/
+
+.fs-box {
+  width: 500px;
+  height: 600px;
+  background-color: #222436;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  border-radius: 14px 0 0 14px;
+}
+
+.fs-box form h1 {
+  color: white;
+  position: relative;
+  margin-top: 50px;
+  left: 20%;
+}
+
+.fs-box form input {
+  display: block;
+  margin: 40px;
+  padding: 10px;
+  width: 80%;
+  background: #222436;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.555);
+  outline: none;
+  font-family: sans-serif;
+  color: white;
+  font-size: 15px;
+}
+
+.fs-box form #sspc {
+  width: 100px;
+  background: orange;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+/*----------------------------------------*/
+
+.sec-box {
+  width: 500px;
+  height: 600px;
+  background-color: #191a22;
+  position: absolute;
+  top: 30%;
+  left: 52%;
+  border-radius: 0px 14px 14px 0;
+}
+
+.sec-box form h1 {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  margin-top: 50px;
+  left: 10%;
+}
+
+.sec-box form p {
+  color: rgba(255, 255, 255, 0.527);
+  font-size: 18px;
+  position: relative;
+  margin-top: 20px;
+  left: 10%;
+}
+
+.sec-box form #icons div {
+  color: white;
+
+  display: block;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.sec-box form #icons div i {
+  font-size: 28px;
+  padding: 8px;
+  background: #292a36;
+  border-radius: 100%;
+}
+
+.sec-box form #icons #loc i {
+  font-size: 23px;
+  padding: 13px;
+  border-radius: 50px;
+}
+
+.sec-box form #address h1 {
+  position: absolute;
+  top: 21%;
+  left: 25%;
+  font-size: 17px;
+}
+
+.sec-box form #address #one {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 26%;
+  left: 40%;
+  font-size: 17px;
+}
+
+.sec-box form #address #two {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  font-size: 17px;
+}
+/*--------------------------*/
+.sec-box form #phone h1 {
+  position: absolute;
+  top: 36%;
+  left: 25%;
+  font-size: 17px;
+}
+
+.sec-box form #phone p {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 41%;
+  left: 37%;
+  font-size: 17px;
+}
+/*--------------------------*/
+.sec-box form #email h1 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  font-size: 17px;
+}
+
+.sec-box form #email p {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 55%;
+  left: 35%;
+  font-size: 17px;
+}
+/*----------------------------------------*/
+
+.sec-box form #website h1 {
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  font-size: 17px;
+}
+
+.sec-box form #website p {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  font-size: 17px;
+}
+/*----------------------------------------*/
+.lst-box {
+  width: 100%;
+  height: 600px;
+  background-color: #1b1b1b;
+  position: absolute;
+  top: 150%;
+}
+
+.k {
+  font-size: 30px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  color: black;
+  display: none;
+}
+
+.lst-box .f {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  top: 25%;
+  left: 15%;
+}
+
+.lst-box .text5 h1 {
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  color: white;
+  font-size: 50px;
+}
+
+.lst-box .text5 .c {
+  position: absolute;
+  top: 45%;
+  left: 49%;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.lst-box .f h1 {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 40%;
+  left: 10%;
+}
+
+.lst-box .f .women {
+  color: white;
+  font-size: 18px;
+  position: relative;
+  top: 45%;
+  left: 15%;
+  text-decoration: underline;
+}
+
+.lst-box .f .men {
+  color: white;
+  font-size: 18px;
+  position: relative;
+  left: -10%;
+  top: 55%;
+  text-decoration: underline;
+}
+
+.lst-box .f .shirts {
+  color: white;
+  font-size: 18px;
+  position: relative;
+  left: -26%;
+  top: 65%;
+  text-decoration: underline;
+}
+
+.lst-box .f .shoes {
+  color: white;
+  font-size: 18px;
+  position: relative;
+  left: -50%;
+  top: 75%;
+  text-decoration: underline;
+}
+
+.lst-box .text5 .adress h1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 55%;
+  left: 45%;
+  text-transform: uppercase;
+}
+
+.lst-box .text5 .adress p {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 61%;
+  left: 45%;
+}
+
+.lst-box .text5 .phone h1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 68%;
+  left: 45%;
+  text-transform: uppercase;
+}
+
+.lst-box .text5 .phone p {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 74%;
+  left: 45%;
+}
+
+.lst-box .text5 .email h1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 79%;
+  left: 45%;
+  text-transform: uppercase;
+}
+
+.lst-box .text5 .email p {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 85%;
+  left: 45%;
+}
+
+.lst-box .text5 .follow h1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 48%;
+  left: 79%;
+  text-transform: uppercase;
+}
+
+.lst-box .text5 .follow .fb i {
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 75%;
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.lst-box .text5 .follow .fb i:hover {
+  color: blue;
+}
+
+.lst-box .text5 .follow .tw i {
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.lst-box .text5 .follow .tw i:hover {
+  color: cyan;
+}
+
+.lst-box .text5 .follow .ins i {
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 85%;
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.lst-box .text5 .follow .ins i:hover {
+  color: rgb(209, 123, 25);
+}
+
+/*------------------------------------*/
+
+@media (max-width: 1200px) {
+  nav .ul1 {
+    position: fixed;
+    top: 64px;
+    left: -150%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  nav .ul1 li {
+    margin: 40px 0;
+  }
+  nav .ul1 li a {
+    font-size: 20px;
+  }
+
+  nav .ul1 li a:hover {
+    background: none;
+    color: #fff;
+  }
+
+  nav .menu-btn i {
+    display: block;
+  }
+
+  nav .first,
+  .second {
+    display: none;
+  }
+
+  .fs-box {
+    width: 500px;
+    height: 600px;
+    background-color: #222436;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    border-radius: 14px 0 0 14px;
+  }
+
+  .sec-box {
+    width: 500px;
+    height: 600px;
+    background-color: #191a22;
+    position: absolute;
+    top: 110%;
+    left: 10%;
+    border-radius: 0px 14px 14px 0;
+  }
+
+  .lst-box {
+    width: 100%;
+    height: 600px;
+    background-color: #1b1b1b;
+    position: absolute;
+    top: 250%;
+  }
+
+  .lst-box .text5 h1 {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    color: white;
+    font-size: 50px;
+  }
+
+  .lst-box .f {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    top: 25%;
+    left: 5%;
+  }
+
+  .lst-box .text5 .c {
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .lst-box .text5 .adress h1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 55%;
+    left: 39%;
+    text-transform: uppercase;
+  }
+
+  .lst-box .text5 .adress p {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 61%;
+    left: 39%;
+  }
+
+  .lst-box .text5 .phone h1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 68%;
+    left: 39%;
+    text-transform: uppercase;
+  }
+
+  .lst-box .text5 .phone p {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 74%;
+    left: 39%;
+  }
+
+  .lst-box .text5 .email h1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 79%;
+    left: 39%;
+    text-transform: uppercase;
+  }
+
+  .lst-box .text5 .email p {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 85%;
+    left: 39%;
+  }
+
+  .lst-box .text5 .follow h1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 48%;
+    left: 75%;
+    text-transform: uppercase;
+  }
+}

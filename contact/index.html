@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>ShopX</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+
+    </head>
+    <body>
+      <nav>
+        <div class="logo">ShopX</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+          <ul class="ul1">
+            <li><a href="../Home/index.html">Home</a></li>
+            <li><a href="../Products/All/products.html">Products</a></li>
+            <li><a href="../women/index.html">Women</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="../contact/index.html">Contact</a></li>
+          </ul>
+         
+            <form action="../Signin/signin.html" class="first">
+              <div class="sign-in">
+                <input type="submit" value="Sign in">    
+             </div>           
+            </form>
+            <form action="../Signup/signup.html" class="second">
+              <div class="sign-up">
+                <input type="submit" value="Sign up">    
+              </div>
+            </form>
+        </nav>
+
+        <!--------------------------------->
+        <div class="fs-box">
+          <form id="contactForm">
+            <h1>Write us</h1>
+            <input id="name" name="" type="text" placeholder="Name">
+            
+            <input id="email" name="" type="text" placeholder="Email">
+            
+            <input id="subject" name="" type="text" placeholder="Subject">
+            
+            <input id="message" name="" type="text" placeholder="Message">
+            
+            <input  id="sspc" name="" type="submit"  value="Submit">
+          </form>
+        </div>
+
+        <div class="danger" role="alert">
+          Something is wrong, Please try again!
+        </div>
+
+        <div class="sec-box">
+          <form>
+            <h1>Contact Information</h1>
+            <p>We're open for any suggestion or just to have a<br> chat</p>
+
+            <div id="icons">
+              <div id="loc">
+                <i class="fas fa-map-marker"></i>
+              </div>
+
+              <div id="phone">
+                <i class="fas fa-phone"></i>
+              </div>
+
+              <div id="email">
+                <i class="fas fa-paper-plane"></i>
+              </div>    
+
+              <div id="earth">
+                <i class="fas fa-globe">
+              </i>
+            </div>
+          </div>
+
+            <div id="address">
+              <h1>Address:</h1>
+              <p id="one">198 West 21th Street, Suit 721</p>
+              <p id="two">New York NY 10016</p>
+            </div>
+
+            <div id="phone">
+              <h1>Phone:</h1>
+              <p>+ 1235 2355 89</p>
+            </div>
+
+            <div id="email">
+              <h1>Email:</h1>
+              <p>info@yoursite.com</p>
+            </div>
+
+            <div id="website">
+              <h1>Website:</h1>
+              <p>yoursite.com</p>
+            </div>      
+          </form>
+        </div>
+
+        <!--------------------------------->
+        <div class="lst-box">
+          <div class="text5">
+            <h1>Need Help ?</h1>
+            <h1 class="c">Contact us</h1>
+            <div class="adress">
+              <h1>address</h1>
+              <p>123 STREET NAME, CITY, TN</p>
+            </div>
+            <div class="phone">
+              <h1>phone</h1>
+              <p>(123) 456-7890</p>
+            </div>
+            <div class="email">
+              <h1>email</h1>
+              <p>MAIL@EXAMPLE.COM</p>
+            </div>
+            <div class="follow">
+              <h1>follow us</h1>
+              <div class="fb">
+                <i class="fab fa-facebook-square"></i>
+              </div>
+              <div class="tw">
+                <i class="fab fa-twitter-square"></i>
+              </div>
+              <div class="ins">
+                <i class="fab fa-instagram"></i>
+              </div>
+             
+            </div>
+          </div>
+            <div class="f">
+              <h1>Featured</h1>
+              <a class="women" href="#">- Women</a>
+              <a class="men" href="#">- Men</a>
+              <a class="shirts" href="#">- T-shirts</a>  
+              <a class="shoes" href="#">- shoes</a>
+            </div>
+          </div>
+
+          
+          <script>
+            var contactForm = document.getElementById("contactForm")
+            var one = document.getElementById('name');
+            var two = document.getElementById('email')
+            var three = document.getElementById('subject')
+            var four = document.getElementById('message')
+            
+               contactForm.addEventListener("submit",(e)=>{
+                e.preventDefault()
+                if(one.value==''){
+                  one.setAttribute
+                  ('style','border-bottom:1px solid rgba(243, 4, 4, 0.555);')
+                }else{
+                  one.removeAttribute('style')
+                }
+                if(!two.value.includes('@') && !two.value.includes('.')||two.value==''){
+                  two.setAttribute
+                  ('style','border-bottom:1px solid rgba(243, 4, 4, 0.555);')
+                }else{
+                  two.removeAttribute('style')
+                }
+                if(three.value==''){
+                  three.setAttribute
+                  ('style','border-bottom:1px solid rgba(243, 4, 4, 0.555);')
+                }else{
+                  three.removeAttribute('style')
+                }
+                if(four.value==''){
+                  four.setAttribute
+                  ('style','border-bottom:1px solid rgba(243, 4, 4, 0.555);')
+                }else{
+                  four.removeAttribute('style')
+                }
+               }
+               )
+
+            function idk(){
+              if (one == 0){
+                alert('Something is wrong, Please try again!')
+              }else if (two == 0){
+                alert('Something is wrong, Please try again!')
+              }else if (three == 0){
+                alert('Something is wrong, Please try again!')
+              }else if(four == 0){
+                alert('Something is wrong, Please try again!')
+              }
+              
+            }
+            
+          </script>
+
+      </body>
+    </html>

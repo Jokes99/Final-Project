@@ -1,0 +1,1726 @@
+body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  nav {
+    position: fixed;
+    z-index: 2;
+    top: 0%;
+    left: 0%;
+    height: 80px;
+    width: 100%;
+    background: #1b1b1b;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px 0 100px;
+  }
+  nav .logo {
+    display: flex;
+    color: #fff;
+    font-size: 35px;
+  }
+  nav .ul1 {
+    display: flex;
+    list-style: none;
+    transition: all 0.3s ease;
+  }
+  /*---------------------------------------------------------*/
+  nav .first .sign-in {
+    position: absolute;
+    right: 23%;
+    top: 13%;
+    display: flex;
+    padding: 20px;
+  }
+  
+  nav .first .sign-in input {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  
+  nav .first .sign-in input:hover {
+    color: #1b1b11;
+    background: white;
+  }
+  /*---------------------------------------------------------*/
+  
+  nav .second .sign-up {
+    position: absolute;
+    right: 15%;
+    top: 13%;
+    display: flex;
+    padding: 20px;
+  }
+  
+  nav .second .sign-up input {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  
+  nav .second .sign-up input:hover {
+    color: #1b1b11;
+    background: white;
+  }
+  /*--------------------------------------------------------------*/
+  .min-text {
+    display: none;
+  }
+  #click:checked ~ .ul1 {
+    left: 0%;
+  }
+  nav .ul1 li {
+    margin: 0 5px;
+  }
+  
+  nav .ul1 li a {
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+  }
+  
+  nav .ul1 li a:hover {
+    color: #1b1b11;
+    background: #fff;
+  }
+  
+  nav .menu-btn i {
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #click {
+    display: none;
+  }
+  
+  .lst-box {
+    width: 100%;
+    height: 600px;
+    background-color: #1b1b1b;
+    position: absolute;
+    top: 650%;
+    left: 0;
+  }
+  
+  .lst-box .f {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    top: 25%;
+    left: 15%;
+  }
+  
+  .lst-box .text5 h1 {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    color: white;
+    font-size: 50px;
+  }
+  
+  .lst-box .text5 .c {
+    position: absolute;
+    top: 45%;
+    left: 49%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .lst-box .f h1 {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 40%;
+    left: 10%;
+  }
+  
+  .lst-box .f .women {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    top: 45%;
+    left: 15%;
+    text-decoration: none;
+  }
+  
+  .lst-box .f .men {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    left: -10%;
+    top: 55%;
+    text-decoration: none;
+  }
+  
+  .lst-box .f .shirts {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    left: -26%;
+    top: 65%;
+    text-decoration: none;
+  }
+  
+  .lst-box .f .shoes {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    left: -50%;
+    top: 75%;
+    text-decoration: none;
+  }
+  
+  .lst-box .text5 .adress h1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 55%;
+    left: 49%;
+    text-transform: uppercase;
+  }
+  
+  .lst-box .text5 .adress p {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 61%;
+    left: 49%;
+  }
+  
+  .lst-box .text5 .phone h1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 68%;
+    left: 49%;
+    text-transform: uppercase;
+  }
+  
+  .lst-box .text5 .phone p {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 74%;
+    left: 49%;
+  }
+  
+  .lst-box .text5 .email h1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 79%;
+    left: 49%;
+    text-transform: uppercase;
+  }
+  
+  .lst-box .text5 .email p {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 85%;
+    left: 49%;
+  }
+  
+  .lst-box .text5 .follow h1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 48%;
+    left: 79%;
+    text-transform: uppercase;
+  }
+  
+  .lst-box .text5 .follow .fb i {
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .lst-box .text5 .follow .fb i:hover {
+    color: blue;
+  }
+  
+  .lst-box .text5 .follow .tw i {
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .lst-box .text5 .follow .tw i:hover {
+    color: cyan;
+  }
+  
+  .lst-box .text5 .follow .ins i {
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .lst-box .text5 .follow .ins i:hover {
+    color: rgb(209, 123, 25);
+  }
+  
+  .container .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    position: absolute;
+    top: 20%;
+  }
+  .container .grid-container .ltle-bg {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container img {
+    position: relative;
+    top: 2%;
+    left: 0%;
+    border-radius: 14px;
+  }
+  
+  .grid-container .ltle-bg:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg a:hover {
+    background: #2d5fa0;
+  }
+  
+  /*-----------------------------------------------------------*/
+  
+  .container .grid-container .ltle-bg2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg2:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg2 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg2 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg2 a:hover {
+    background: #2d5fa0;
+  }
+  
+  /*------------------------------------------------------------*/
+  
+  .container .grid-container .ltle-bg3 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg3:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg3 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg3 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg3 a:hover {
+    background: #2d5fa0;
+  }
+  
+  /*------------------------------------------------------------*/
+  
+  .container .grid-container .ltle-bg4 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg4:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg4 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg4 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg4 a:hover {
+    background: #2d5fa0;
+  }
+  
+  /*------------------------------------------------------------*/
+  
+  .container .grid-container .ltle-bg5 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg5:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg5 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg5 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg5 a:hover {
+    background: #2d5fa0;
+  }
+  
+  /*------------------------------------------------------------*/
+  
+  .container .grid-container .ltle-bg6 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg6:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg6 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg6 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg6 a:hover {
+    background: #2d5fa0;
+  }
+  
+  /*------------------------------------------------------------*/
+  
+  .container .grid-container .ltle-bg7 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg7:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg7 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg7 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg7 a:hover {
+    background: #2d5fa0;
+  }
+  
+  /*------------------------------------------------------------*/
+  
+  .container .grid-container .ltle-bg8 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg8:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg8 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg8 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg8 a:hover {
+    background: #2d5fa0;
+  }
+  
+  /*------------------------------------------------------------*/
+  
+  .container .grid-container .ltle-bg9 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg9:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg9 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg9 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg9 a:hover {
+    background: #2d5fa0;
+  }
+  
+  /*------------------------------------------------------------*/
+  
+  
+  .container2 .small-sent2 h1 {
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    top: 190%;
+    left: 10%;
+  }
+  
+  .container2 .grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    position: absolute;
+    top: 200%;
+  }
+  .container2 .grid-container2 .ltle-bg {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container2 img {
+    position: relative;
+    top: 2%;
+    left: 0%;
+    border-radius: 14px;
+  }
+  
+  /*---------------------------------------------*/
+  
+  .container .grid-container .ltle-bg10 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg10:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg10 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg10 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg10 a:hover {
+    background: #2d5fa0;
+  }
+  
+  /*-----------------------------------------------*/
+  
+  /*---------------------------------------------*/
+  
+  .container .grid-container .ltle-bg11 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg11:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg11 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg11 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg11 a:hover {
+    background: #2d5fa0;
+  }
+  
+  /*---------------------------------------------*/
+  
+  .container .grid-container .ltle-bg12 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg12:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg12 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg12 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg12 a:hover {
+    background: #2d5fa0;
+  }
+  
+  
+  
+  
+  /*------------------------------------------*/
+  
+  .container .grid-container .ltle-bg13 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg13:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg13 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg13 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg13 a:hover {
+    background: #2d5fa0;
+  }
+  
+  /*------------------------------------------*/
+  
+  .container .grid-container .ltle-bg14 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg14:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg14 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg14 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg14 a:hover {
+    background: #2d5fa0;
+  }
+  
+  
+  
+  
+  /*------------------------------------------*/
+  
+  
+  .container .grid-container .ltle-bg15 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg15:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg15 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg15 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg15 a:hover {
+    background: #2d5fa0;
+  }
+  
+  
+  
+  
+  /*------------------------------------------*/
+  
+  
+  .container .grid-container .ltle-bg16 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg16:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg16 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg16 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg16 a:hover {
+    background: #2d5fa0;
+  }
+  
+  
+  
+  
+  /*------------------------------------------*/
+  
+  
+  .container .grid-container .ltle-bg17 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg17:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg17 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg17 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg17 a:hover {
+    background: #2d5fa0;
+  }
+  
+  
+  
+  
+  /*------------------------------------------*/
+  
+  
+  .container .grid-container .ltle-bg18 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg18:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg18 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg18 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg18 a:hover {
+    background: #2d5fa0;
+  }
+  
+  
+  
+  
+  /*------------------------------------------*/
+  
+  .container .grid-container .ltle-bg19 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg19:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg19 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg19 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg19 a:hover {
+    background: #2d5fa0;
+  }
+  
+  
+  
+  
+  /*------------------------------------------*/
+  
+  .container .grid-container .ltle-bg20 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg20:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg20 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg20 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg20 a:hover {
+    background: #2d5fa0;
+  }
+  
+  
+  
+  
+  /*------------------------------------------*/
+  
+  
+  .container .grid-container .ltle-bg21 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg21:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg21 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg21 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg21 a:hover {
+    background: #2d5fa0;
+  }
+
+   /*------------------------------------------*/
+  
+  
+   .container .grid-container .ltle-bg22 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg22:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg22 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg22 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg22 a:hover {
+    background: #2d5fa0;
+  }
+  
+   /*------------------------------------------*/
+  
+  
+   .container .grid-container .ltle-bg23 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg23:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg23 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg23 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg23 a:hover {
+    background: #2d5fa0;
+  }
+
+   /*------------------------------------------*/
+  
+  
+   .container .grid-container .ltle-bg24 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .grid-container .ltle-bg24:hover {
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg24 h1 {
+    color: black;
+    opacity: 0.7;
+    position: relative;
+    font-size: 25px;
+    top: 4%;
+    left: -32%;
+  }
+  
+  .grid-container .ltle-bg24 a {
+    border: none;
+    position: relative;
+    color: white;
+    background: #3d83df;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 7%;
+    left: 30%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .grid-container .ltle-bg24 a:hover {
+    background: #2d5fa0;
+  }
+  
+  
+  
+  /*------------------------------------------*/
+  
+  
+  @media (max-width: 940px) {
+    nav .ul1 {
+      position: fixed;
+      top: 64px;
+      left: -150%;
+      background: #111;
+      height: 100vh;
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+  
+    nav .ul1 li {
+      margin: 40px 0;
+    }
+    nav .ul1 li a {
+      font-size: 20px;
+    }
+  
+    nav .ul1 li a:hover {
+      background: none;
+      color: #fff;
+    }
+  
+    nav .menu-btn i {
+      display: block;
+    }
+  
+    nav .first,
+    .second {
+      display: none;
+    }
+  
+    .lst-box {
+      width: 100%;
+      height: 600px;
+      background-color: #1b1b1b;
+      position: absolute;
+      top: 1900%;
+    }
+  
+    .lst-box .text5 h1 {
+      position: absolute;
+      top: 10%;
+      left: 35%;
+      color: white;
+      font-size: 50px;
+    }
+  
+    .lst-box .f {
+      width: 300px;
+      height: 400px;
+      position: relative;
+      top: 25%;
+      left: 5%;
+    }
+  
+    .lst-box .text5 .c {
+      position: absolute;
+      top: 45%;
+      left: 43%;
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+    }
+  
+    .lst-box .text5 .adress h1 {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 55%;
+      left: 39%;
+      text-transform: uppercase;
+    }
+  
+    .lst-box .text5 .adress p {
+      color: white;
+      font-size: 15px;
+      position: absolute;
+      top: 61%;
+      left: 39%;
+    }
+  
+    .lst-box .text5 .phone h1 {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 68%;
+      left: 39%;
+      text-transform: uppercase;
+    }
+  
+    .lst-box .text5 .phone p {
+      color: white;
+      font-size: 15px;
+      position: absolute;
+      top: 74%;
+      left: 39%;
+    }
+  
+    .lst-box .text5 .email h1 {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 79%;
+      left: 39%;
+      text-transform: uppercase;
+    }
+  
+    .lst-box .text5 .email p {
+      color: white;
+      font-size: 15px;
+      position: absolute;
+      top: 85%;
+      left: 39%;
+    }
+  
+    .lst-box .text5 .follow h1 {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 48%;
+      left: 75%;
+      text-transform: uppercase;
+    }
+  
+    .container .sent h1 {
+      color: black;
+      font-size: 25px;
+      position: absolute;
+      top: 20%;
+      left: 10%;
+    }
+  
+    .container .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 10px;
+      position: absolute;
+      top: 40%;
+      display: block;
+    }
+  
+    /*------------------------------------------------*/
+  
+    .container2 .small-sent2 h1 {
+      color: black;
+      font-size: 25px;
+      position: absolute;
+      top: 490%;
+      left: 10%;
+    }
+  
+    .container2 .grid-container2 {
+      display: block;
+      grid-template-columns: auto auto auto;
+      padding: 10px;
+      position: absolute;
+      top: 500%;
+    }
+  
+    .container3 .small-sent3 h1 {
+      color: black;
+      font-size: 25px;
+      position: absolute;
+      top: 960%;
+      left: 10%;
+    }
+  
+    .container3 .grid-container3 {
+      display: block;
+      grid-template-columns: auto auto auto;
+      padding: 10px;
+      position: absolute;
+      top: 970%;
+    }
+  
+    .container4 .small-sent4 h1 {
+      color: black;
+      font-size: 25px;
+      position: absolute;
+      top: 1430%;
+      left: 10%;
+    }
+  
+    .container4 .grid-container4 {
+      display: block;
+      grid-template-columns: auto auto auto;
+      padding: 10px;
+      position: absolute;
+      top: 1440%;
+    }
+  }
+  
