@@ -1,14 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+
   background: #2e2d2d;
   background-attachment: fixed;
   background-repeat: no-repeat;
 
   height: 100vh;
 }
-
+* {
+  font-family: "Roboto", sans-serif;
+}
 nav {
   position: fixed;
   z-index: 1;
@@ -159,6 +161,7 @@ nav .menu-btn i {
   text-align: center;
   margin: 0 0 15px 30px;
   transition: 0.1s;
+  font-family: sans-serif;
 }
 
 #email:focus {
@@ -177,6 +180,7 @@ nav .menu-btn i {
   text-align: center;
   margin: 0 0 15px 30px;
   transition: 0.1s;
+  font-family: sans-serif;
 }
 
 #username:focus {
@@ -195,6 +199,7 @@ nav .menu-btn i {
   text-align: center;
   margin: 0 0 15px 30px;
   transition: 0.1s;
+  font-family: sans-serif;
 }
 #pass:focus {
   width: 280px;
@@ -212,6 +217,7 @@ nav .menu-btn i {
   text-align: center;
   margin: 0 0 15px 30px;
   transition: 0.1s;
+  font-family: sans-serif;
 }
 
 #password:focus {
@@ -228,6 +234,7 @@ nav .menu-btn i {
   border-radius: 24px;
   padding: 15px;
   margin: 0 0 0 120px;
+  font-family: sans-serif;
 }
 
 #create:hover {

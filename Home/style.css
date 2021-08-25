@@ -96,7 +96,7 @@ nav .ul1 li a:hover {
 nav .menu-btn i {
   position: absolute;
   top: 25%;
-  right: 20%;
+  right: 25%;
   color: white;
   font-size: 32px;
   cursor: pointer;
@@ -247,18 +247,18 @@ article .text3 p {
 
 .art-men .image4 img {
   position: relative;
-  top: 5%;
+  top: 50%;
   left: 0%;
 }
 
 article .text4 h1 {
-  margin-top: 170px;
+  margin-top: 350px;
   margin-left: 30px;
   font-size: 30px;
 }
 
 article .text4 p {
-  margin-top: 50px;
+  margin-top: 150px;
   margin-left: 230px;
   font-size: 25px;
 }
